@@ -231,7 +231,7 @@ section .btn a {
   display: block;
   color: #fff;
   letter-spacing: -0.05em;
-  background: url(/common/images/button_sp.jpg);
+  background: url(../images/button_sp.jpg);
   background-size: contain;
   text-decoration: none;
   text-align: center;

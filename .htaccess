@@ -1,3 +1,1 @@
-AddHandler php5.2-script .htm .html #PHPが5.2の場合
-AddHandler php5.3-script .htm .html #PHPが5.3の場合
-AddHandler php5.4-script .htm .html #PHPが5.4の場合
+AddHandler php5.6-script html

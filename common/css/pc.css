@@ -96,7 +96,7 @@ section {
   -ms-flex-align: start;
   align-items: flex-start;
   padding: 20px 20px 30px;
-  background: url(/common/images/dotted.jpg);
+  background: url(../images/dotted.jpg);
   position: relative;
   z-index: 1;
 }
@@ -255,7 +255,7 @@ section .btn a {
   line-height: 40px;
   color: #fff;
   letter-spacing: -0.05em;
-  background: url(/common/images/button.jpg);
+  background: url(../images/button.jpg);
   text-decoration: none;
   font-size: 18px;
 }
