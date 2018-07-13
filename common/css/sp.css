@@ -1,0 +1,248 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  font-family: 'メイリオ', Meiryo, sans-serif;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: bottom;
+  width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  width: 100%;
+  text-align: center;
+}
+
+main {
+  width: 100%;
+  margin: 0 auto;
+}
+
+section {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  padding-bottom: 22.5px;
+  margin: 0 auto;
+}
+
+section .imgpic {
+  -webkit-box-ordinal-group: 2;
+  -ms-flex-order: 1;
+  order: 1;
+}
+
+section .tit {
+  -webkit-box-ordinal-group: 3;
+  -ms-flex-order: 2;
+  order: 2;
+}
+
+section .inner {
+  -webkit-box-ordinal-group: 4;
+  -ms-flex-order: 3;
+  order: 3;
+}
+
+section .btn {
+  -webkit-box-ordinal-group: 5;
+  -ms-flex-order: 4;
+  order: 4;
+}
+
+section .tit {
+  width: 93.75%;
+  background: #ff7d73;
+  border-radius: 3px;
+  margin: 10px auto;
+  padding: 0.5%;
+}
+
+section .tit a {
+  display: block;
+  font-size: 18px;
+  color: #fff;
+  text-decoration: underline;
+  border-left: 2.5px solid #ffe073;
+  line-height: 1.05;
+  padding: 2.5px 0 2.5px 2.5px;
+}
+
+section .inner {
+  width: 93.75%;
+  margin: 0 auto;
+}
+
+section .inner .price {
+  line-height: 1.15;
+}
+
+section .inner .price, section .inner .notes {
+  text-align: right;
+}
+
+section .inner .price, section .inner .price span span {
+  font-size: 16px;
+}
+
+section .inner .price span {
+  color: #f00;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+section .inner .notes {
+  display: none;
+}
+
+section .inner .lede {
+  background: #ff7d73;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 10px auto;
+}
+
+section .inner .lede dt {
+  font-size: 14px;
+  width: 23.3%;
+  text-align: center;
+}
+
+section .inner .lede dd {
+  background: #fff0b9;
+  width: 76.6%;
+  color: #ff7d73;
+  font-size: 16px;
+  padding: 5px 0 5px 5px;
+}
+
+section .inner .plist {
+  font-size: 11px;
+  margin-top: 10px;
+}
+
+section .inner .plist li {
+  padding-left: 15px;
+  line-height: 1.36;
+  letter-spacing: 0.07em;
+  position: relative;
+}
+
+section .inner .plist li:before {
+  content: '';
+  width: 8px;
+  height: 8px;
+  background: #ff7d73;
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  top: 2px;
+}
+
+section .inner .plist li + li {
+  margin-top: 15px;
+}
+
+section .btn {
+  margin: 22.5px auto 0;
+}
+
+section .btn a {
+  width: 180px;
+  height: 30px;
+  font-size: 13.5px;
+  display: block;
+  color: #fff;
+  letter-spacing: -0.05em;
+  background: url(/common/images/button_sp.jpg);
+  background-size: contain;
+  text-decoration: none;
+  text-align: center;
+  line-height: 30px;
+}
+
+.pagetop {
+  width: 30px;
+  height: 30px;
+  position: fixed;
+  bottom: 5px;
+  right: 10px;
+  cursor: pointer;
+}

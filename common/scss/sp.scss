@@ -1,0 +1,220 @@
+@charset "utf-8";
+
+//-------------------------------Reset CSS---------------------------------//
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	//font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+//-------------------------------Reset CSS---------------------------------//
+
+//全体
+body{
+    font-family: 'メイリオ', Meiryo, sans-serif;
+    box-sizing: border-box;
+}
+
+//置換inline
+img{
+    vertical-align: bottom;
+    width: 100%;
+    height: auto;
+}
+
+//リンク
+a{
+    text-decoration: none;
+}
+
+//KV
+header{
+    width: 100%;
+    text-align: center;
+}
+
+//メイン
+main{
+    width: 100%;
+    margin: 0 auto;
+}
+
+//各プラン
+section{
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-bottom: 22.5px;
+    margin: 0 auto;
+}//section
+
+section{
+    .imgpic{
+        order: 1;
+    }
+    .tit{
+        order: 2;
+    }
+    .inner{
+        order: 3;
+    }
+    .btn{
+        order: 4;
+    }
+}
+
+section{
+    .tit{
+        width: 93.75%;
+        background: #ff7d73;
+        border-radius: 3px;
+        margin: 10px auto;
+        padding: 0.5%;
+        a{
+            display: block;
+            font-size: 18px;
+            color: #fff;
+            text-decoration: underline;
+            border-left: 2.5px solid #ffe073;
+            line-height: 1.05;
+            padding: 2.5px 0 2.5px 2.5px;
+        }//a
+    }//.tit
+}//section
+
+section{
+    .inner{
+        width: 93.75%;
+        margin: 0 auto;
+        .price{
+            line-height: 1.15;
+        }
+        .price, .notes{
+            text-align: right;
+        }
+        .price, .price span span{
+            font-size: 16px;
+        }
+        .price span{
+            color: #f00;
+            font-size: 2em;
+            font-weight: bold;
+        }
+        .notes{
+            display: none;
+        }
+        .lede{
+            background: #ff7d73;
+            color: #fff;
+            display: flex;
+            -ms-align-items: center;
+            align-items: center;
+            margin: 10px auto;
+            dt{
+                font-size: 14px;
+                width: 23.3%;
+                text-align: center;
+            }
+            dd{
+                background: #fff0b9;
+                width: 76.6%;
+                color: #ff7d73;
+                font-size: 16px;
+                padding: 5px 0 5px 5px;
+            }
+        }
+        .plist{
+            font-size: 11px;
+            margin-top: 10px;
+            li{
+                padding-left: 15px;
+                line-height: 1.36;
+                letter-spacing: 0.07em;
+                position: relative;
+                &:before{
+                    content: '';
+                    width: 8px;
+                    height: 8px;
+                    background: #ff7d73;
+                    border-radius: 50%;
+                    position: absolute;
+                    left: 0;
+                    top: 2px;
+                }
+                & + li{
+                    margin-top: 15px;
+                }
+            }
+        }
+    }
+}
+
+section .btn{
+    margin: 22.5px auto 0;
+    a{
+        width: 180px;
+        height: 30px;
+        font-size: 13.5px;
+        display: block;
+		color: #fff;
+		letter-spacing: -0.05em;
+        background: url(/common/images/button_sp.jpg);
+        background-size: contain;
+        text-decoration: none;
+        text-align: center;
+        line-height: 30px;
+    }
+}
+
+.pagetop{
+    width: 30px;
+    height: 30px;
+    position: fixed;
+    bottom: 5px;
+    right: 10px;
+    cursor: pointer;
+}
